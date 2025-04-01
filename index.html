@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Story Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Welcome to the Marvel Story Game</h1>
+        <button id="start-button">Start Game</button>
+    </div>
+
+    <div id="movie-selection" class="hidden">
+        <h2>Select Your Movie</h2>
+        <button class="movie-choice" data-movie="endgame">Avengers: Endgame</button>
+        <button class="movie-choice" data-movie="ultron">Avengers: Age of Ultron</button>
+        <button class="movie-choice" data-movie="infinity">Avengers: Infinity War</button>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <h2 id="movie-title"></h2>
+        <p id="story-text"></p>
+        <button id="choice1"></button>
+        <button id="choice2"></button>
+        <button id="reset-button" class="hidden">Restart Game</button>
+        <button id="quit-button">Quit</button>
+    </div>
+
+    <div id="addendum">
+        <h2>Addendum</h2>
+        <p>This webpage utilizes various HTML tags to build the structure:</p>
+        <ul>
+            <li><strong>&lt;div&gt;</strong>: Used to create different sections like start screen, movie selection, game container, etc.</li>
+            <li><strong>&lt;button&gt;</strong>: Buttons are used for user interaction, such as starting the game and selecting options.</li>
+            <li><strong>&lt;h1&gt; and &lt;h2&gt;</strong>: Headings are used to display titles and subtitles for the sections.</li>
+            <li><strong>&lt;img&gt;</strong>: The <code>&lt;img&gt;</code> tag is used to display images related to the story or game.</li>
+            <li><strong>&lt;p&gt;</strong>: Paragraph tags are used to display text-based content such as the story text.</li>
+            <strong>&lt;footer&gt;</strong>: This section provides the last update information and credits.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
